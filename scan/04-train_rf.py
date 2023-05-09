@@ -161,7 +161,7 @@ if __name__ == "__main__":
 
     with open(f"{model_dir}/rf_{num_trees}_{cell_type}_{tf}.pkl", "wb") as f:
         pickle.dump(model_dict, f)
-
+    
     # plot
     fig, ax = plt.subplots(figsize=(15, 5))
     ax.bar(spearman_dict.keys(), spearman_dict.values(), color="darkorange")
